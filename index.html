@@ -1,9 +1,50 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <header>
+      <h1>INTENTION TIMER</h1>
+    </header>
+    <div class="body-container">
+      <main>
+        <h2>New Activity</h2>
+        <form>
+          <fieldset>
+          <p>Select a Category</p>
+            <ul class="form-row">
+              <li><img src="./assets/study.svg">Study</li>
+              <li><img src="./assets/meditate.svg">Meditate</li>
+              <li><img src="./assets/exercise.svg">Exercise</li>
+            </ul>
+          </fieldset>
+          <fieldset>
+          <label for"card-title">What would you like to accomplish during this time?</label>
+          <input type="text" name="card-title">
+          </fieldset>
+          <div class="form-row">
+            <fieldset class="time">
+              <label for"minutes">Minutes</label>
+              <input type="text" name="minutes">
+            </fieldset>
+            <fieldset class="time">
+              <label for"seconds">Seconds</label>
+              <input type="text" name="seconds">
+            </fieldset>
+          </div>
+          <button type="submit">START ACTIVITY</button>
+        </form>
+      </main>
+      <aside>
+        <h2>Past Activities</h2>
+        <section class="aside-content-container">
+          <p>You haven't logged any activities yet.</p>
+          <p>Complete the form to the left and get started!</p>
+        </section>
+      </aside>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
