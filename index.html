@@ -10,31 +10,43 @@
     </header>
     <div class="body-container">
       <main>
-        <h2>New Activity</h2>
-        <form>
+        <h2 class="page-title">New Activity</h2>
+        <form class="form-step-1">
           <fieldset>
           <p>Select a Category</p>
-            <ul class="form-row">
-              <li><img src="./assets/study.svg">Study</li>
-              <li><img src="./assets/meditate.svg">Meditate</li>
-              <li><img src="./assets/exercise.svg">Exercise</li>
+            <ul class="form-row button-row">
+              <li class="study study-btn">
+                <img src="./assets/study.svg" class="study study-img-active">
+                <img src="./assets/study-active.svg" class="study study-img-hidden">
+                Study
+              </li>
+              <li class="meditate meditate-btn">
+                <img src="./assets/meditate.svg" class="meditate meditate-img-active">
+                <img src="./assets/meditate-active.svg" class="meditate meditate-img-hidden">
+                Meditate
+              </li>
+              <li class="exercise exercise-btn">
+                <img src="./assets/exercise.svg" class="exercise exercise-img-active">
+                <img src="./assets/exercise-active.svg" class="exercise exercise-img-hidden">
+                Exercise
+              </li>
             </ul>
           </fieldset>
           <fieldset>
           <label for"card-title">What would you like to accomplish during this time?</label>
-          <input type="text" name="card-title">
+          <input type="text" name="card-title" required>
           </fieldset>
           <div class="form-row">
             <fieldset class="time">
               <label for"minutes">Minutes</label>
-              <input type="text" name="minutes">
+              <input type="number" name="minutes" min="0" max = "60" required>
             </fieldset>
             <fieldset class="time">
               <label for"seconds">Seconds</label>
-              <input type="text" name="seconds">
+              <input type="number" name="seconds" min="0" max="59" required>
             </fieldset>
           </div>
-          <button type="submit">START ACTIVITY</button>
+          <button type="submit" id="form-one-submit">START ACTIVITY</button>
         </form>
       </main>
       <aside>

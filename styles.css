@@ -53,6 +53,13 @@ input {
   border: none;
   border-bottom: solid 1px white;
   font-size: 2em;
+  color: #CBC9CF;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 main form {
@@ -73,6 +80,26 @@ main form label {
   font-size: 1.25em;
 }
 
+.form-step-2 {
+  align-items: center;
+  justify-content: center;
+}
+
+.form-step-2 p {
+  font-size: 5em;
+}
+
+#timer-start {
+  align-self: center;
+  background-color: #46424D;
+  margin-top: 5%;
+  border-radius: 50%;
+  height: 25vh;
+  width: 25vh;
+  color: #CBC9CF;
+  border: solid 1px #C278FD;
+}
+
 .form-row {
   display: flex;
   justify-content: space-between;
@@ -80,12 +107,10 @@ main form label {
 
 .form-row img {
   width: 2em;
-  display: block;
   margin-bottom: 5%;
 }
 
 .form-row li {
-  border: solid 1px white;
   width: 25%;
   border-radius: 0.5em;
   display: flex;
@@ -93,6 +118,12 @@ main form label {
   justify-content: center;
   align-items: center;
   padding: 1% 0;
+}
+
+.study-btn,
+.meditate-btn,
+.exercise-btn {
+  border: solid 1px white;
 }
 
 fieldset {
@@ -130,4 +161,29 @@ aside {
 
 .aside-content-container {
   margin-top: 5%;
+}
+
+/* JS classes */
+
+.study-active {
+  border: solid 1px #B3FD78;
+  color: #B3FD78;
+}
+
+.meditate-active {
+  border: solid 1px #C278FD;
+  color: #C278FD;
+}
+
+.exercise-active {
+  border: solid 1px #FD8078;
+  color: #FD8078;
+}
+
+.hidden,
+.study-img-hidden,
+.meditate-img-hidden,
+.exercise-img-hidden {
+  display: none;
+  border: solid 2px white;
 }
